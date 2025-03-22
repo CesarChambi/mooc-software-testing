@@ -1,4 +1,4 @@
-package tudelft.numfinder;
+package tudelft.numfinderTest;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,5 +20,5 @@ class NumFinderTest {
         assertEquals(-1, nf.getLargest());
         assertEquals(-4, nf.getSmallest());
     }
-
+//
 }

@@ -1,4 +1,4 @@
-package tudelft.numfinder;
+package tudelft.numfinderTest;
 
 public class NumFinder {
     private int smallest = Integer.MAX_VALUE;
@@ -9,7 +9,7 @@ public class NumFinder {
 
             if(n < smallest)
                 smallest = n;
-            if (n > largest) // Eliminamos el else porque impide actualizar el largest si n < smallest.
+            if (n > largest) // Eliminamos el else porque impide actualizar el largest si n < smallest
                 largest = n;
 
         }

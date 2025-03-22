@@ -1,4 +1,4 @@
-package tudelft.numfinder;
+package tudelft.numfinderTest;
 
 public class NumFinderMain {
 
