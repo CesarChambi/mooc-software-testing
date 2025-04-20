@@ -17,4 +17,12 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    // Se agrega ese test para asegurar que las palabras que terminan en 'r' tambien se cuenten
+    // correctamente al final de la cadena
+    @Test
+    public void lastWordEndsInR() {
+        int words = new CountLetters().count("car");
+        Assertions.assertEquals(1, words);
+    }
+
 }
