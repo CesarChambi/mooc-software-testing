@@ -3,7 +3,9 @@ package tudelft.sum;
 import java.util.ArrayList;
 import java.util.Collections;
 
-// Source: https://leetcode.com/problems/add-two-numbers/description/
+// Ejercicio 2:
+// Sumar dos números
+
 class TwoNumbersSum {
 
     public ArrayList<Integer> addTwoNumbers(ArrayList<Integer> first, ArrayList<Integer> second) {
@@ -17,12 +19,13 @@ class TwoNumbersSum {
             int firstVal = i < first.size() ? first.get(i) : 0;
             int secondVal = i < second.size() ? second.get(i) : 0;
             int total = firstVal + secondVal + complement;
-            complement = 0;
-            if (total >= 10){
-                complement = 1;
-                total -= 10;
-            }
-            result.add(i, total);
+            complement = total >= 10 ? 1 : 0;
+            result.add(total % 10);
+        }
+
+        // agregar el acarreo final si queda pendiente
+        if (complement == 1) {
+            result.add(complement);
         }
 
         Collections.reverse(result);
